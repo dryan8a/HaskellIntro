@@ -22,7 +22,7 @@ import           Data.Char
 
 -- Try changing Int to Integer, then try to make the number overflow. Do it. I dare you.
 integer :: Int
-integer = undefined
+integer = 10
 
 -- All of the above still work (except for integer division), but here's some additional functions:
 
@@ -30,7 +30,7 @@ integer = undefined
 -- (/) :: Double -> Double -> Double
 -- recip :: Double -> Double
 floating :: Double
-floating = undefined
+floating = 3.14159
 
 -- ASCII Code to Char
 -- chr :: Int -> Char
@@ -43,7 +43,7 @@ floating = undefined
 -- toUpper :: Char -> Char
 -- toLower :: Char -> Char
 char :: Char
-char = undefined
+char = 'a'
 
 -- A 'Maybe a' can either be 'Just value' where value is of type a or 'Nothing' (similar-ish to a nullable type).
 -- For example, a Maybe Int can be 'Just 1', 'Just 50', 'Nothing', etc.
@@ -53,7 +53,7 @@ char = undefined
 
 -- Play around with other types than Int maybe? (no pun intended)
 maybe' :: Maybe Int
-maybe' = undefined
+maybe' = Just 2
 
 -- The are really only three main functions both operating on and returning bool:
 
@@ -80,12 +80,12 @@ maybe' = undefined
 -- isJust :: Maybe a -> Bool
 -- isNothing :: Maybe a -> Bool
 bool :: Bool
-bool = undefined
+bool = True
 
 -- Just one helper for now
 -- (++) :: String -> String -> String
 string :: String
-string = undefined
+string = "undefined"
 
 -- A tuple can be any two (or more) types, and there are two functions to help you access the items.
 -- fst :: (a, b) -> a
