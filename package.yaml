@@ -1,0 +1,24 @@
+name: haskell-talk
+version: 0.1.0.0
+
+dependencies:
+  - base >= 4.7 && < 5
+
+library:
+  exposed-modules:
+    - BasicTypes
+    - BasicFunctions
+    - CustomTypes
+    - Recursion
+    - Lists
+    - Zoo
+  source-dirs: src
+  ghc-options: -Wall
+
+tests:
+  haskell-talk-test:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - haskell-talk
+      - hspec
