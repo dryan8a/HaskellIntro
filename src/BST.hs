@@ -45,17 +45,17 @@ elem' a (Node v l r)
 
 -- Takes a comparable value and removes the first instance of that value it finds in the BST
 -- If it does not find that value, return it as is
-delete :: (Ord a) => a -> BST a -> BST a
-delete _ Empty = Empty
-delete a (Node v l r) 
-    | a < v = Node (delete a l) v r
-    | a > v = Node l v (delete a r)
-    | otherwise = 
+-- delete :: (Ord a) => a -> BST a -> BST a
+-- delete _ Empty = Empty
+-- delete a (Node v l r) 
+--     | a < v = Node (delete a l) v r
+--     | a > v = Node l v (delete a r)
+--     | otherwise = 
 
 -- Takes a list of comparable values and creates a valid BST from it
-fromList :: (Ord a) => [a] -> BST a
-fromList = undefined
+-- fromList :: (Ord a) => [a] -> BST a
+-- fromList = undefined
 
--- Flattens the BST into a list
-toList :: BST a -> [a]
-toList = undefined
+-- -- Flattens the BST into a list
+-- toList :: BST a -> [a]
+-- toList = undefined
